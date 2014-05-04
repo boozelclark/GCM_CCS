@@ -1,0 +1,24 @@
+{application, gcm_ccs,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+		  compiler,
+		  syntax_tools,
+		  lager,
+		  exmpp,
+		  crypto,
+		  asn1,
+		  public_key,
+		  ssl
+                 ]},
+  {mod, { gcm_ccs, []}},
+  {env, [
+	    {pkg, "pkg.name.from.app"},
+	    {gcm_sender_id, "GCM_SENDER_ID@gcm.googleapis.com"},
+	    {pwd, "API_KEY"}    
+	]}
+ ]}.
